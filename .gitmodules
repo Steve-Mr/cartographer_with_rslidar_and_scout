@@ -1,0 +1,15 @@
+[submodule "pointcloud_to_laserscan"]
+	path = pointcloud_to_laserscan
+	url = https://github.com/Steve-Mr/pointcloud_to_laserscan.git
+[submodule "robosense_simulator"]
+	path = robosense_simulator
+	url = https://github.com/Steve-Mr/robosense_simulator.git
+[submodule "ugv_sim"]
+	path = ugv_sim
+	url = https://github.com/Steve-Mr/ugv_sim.git
+[submodule "cartographer"]
+	path = cartographer
+	url = https://github.com/Steve-Mr/cartographer.git
+[submodule "cartographer_ros"]
+	path = cartographer_ros
+	url = https://github.com/Steve-Mr/cartographer_ros.git
