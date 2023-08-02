@@ -13,3 +13,6 @@
 [submodule "cartographer_ros"]
 	path = cartographer_ros
 	url = https://github.com/Steve-Mr/cartographer_ros.git
+[submodule "cartographer_mir"]
+	path = cartographer_mir
+	url = https://github.com/cartographer-project/cartographer_mir.git
