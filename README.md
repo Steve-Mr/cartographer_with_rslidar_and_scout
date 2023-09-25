@@ -23,6 +23,21 @@ sudo apt-get update
 sudo apt-get install -y python3-wstool python3-rosdep ninja-build
 ```
 
+Some steps that may be required
+These steps **have been done in this repository**, but if you clone the official cartographer and cartographer_ros repositories directly, you may need:
+1. Delete `<depend>libabsl-dev</depend>` line from `package.xml` in cartographer package
+2. Add `set(CMAKE_CXX_STANDARD 17)` to `CMakeLists.txt` (around line 27) in cartographer package
+3. Add these two lines to `CMakeLists.txt` in cartographer_ros/cartographer_ros package
+    ```
+    set(CMAKE_CXX_STANDARD 17)
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+    ```
+4. Add these two lines to `CMakeLists.txt` in cartographer_ros/cartographer_rviz package
+    ```
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+    add_compile_options(-fPIC)
+    ```
+
 Then install cartographer_ros' dependencies.
 
 ```sh
